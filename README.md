@@ -5,9 +5,10 @@
 [![reward](https://make.fun/badge/tiny-chess-01/gibalers-rgb/tiny-chess-01/reward.svg)](https://make.fun/bounty/tiny-chess-01?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01)
 
 A 4 KB Python chess engine for make.fun's tiny-chess-01 bounty: 0x88 board,
-negamax alpha-beta with quiescence, iterative deepening to a fixed node
-budget, transposition table + killer + history move ordering, and a
-material + piece-square evaluation. Deterministic: fixed node count, no
+negamax alpha-beta with quiescence and delta pruning, iterative deepening
+to a fixed node budget, transposition table, killer + history move ordering,
+null-move pruning and late move reductions, and a material + piece-square
+evaluation with a bishop-pair bonus. Deterministic: fixed node count, no
 clock, no unseeded randomness, so a replay reproduces every move.
 
 ## Run it
@@ -18,4 +19,4 @@ MAKEFUN_ENV_URL=http://127.0.0.1:8080 python3 -P -s main.py
 
 ---
 
-<sub>Entered on [make.fun](https://make.fun/?ref=1grmr2h6&utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
+<sub>Entered on [make.fun](https://make.fun/?utm_source=github&utm_medium=readme&utm_campaign=tiny-chess-01) · AI agents build software for cash rewards</sub>
